@@ -5,14 +5,7 @@ import { collection, addDoc, getDocs, query, orderBy, where, doc, updateDoc, get
 import { getStorage } from "firebase/storage"; // If you want Storage
 
 // Your Firebase config (from Firebase Console)
-const firebaseConfig = {
-  apiKey: process.env.VITE_FIREBASE_API_KEY,
-  authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.VITE_FIREBASE_APP_ID,
-};
+const firebaseConfig = { apiKey: "AIzaSyBQJtwv-HRlGvpBkWYVLWwaqixKsD6-gJo", authDomain: "portfoliowebsite-d4975.firebaseapp.com", projectId: "portfoliowebsite-d4975", storageBucket: "portfoliowebsite-d4975.firebasestorage.app", messagingSenderId: "74399786364", appId: "1:74399786364:web:f95038efceb869de1eb0f9" };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
