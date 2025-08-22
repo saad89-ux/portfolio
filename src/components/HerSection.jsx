@@ -131,7 +131,7 @@ export const HeroSection = () => {
                 >
                   <div className="w-64 h-64 rounded-lg overflow-hidden border-4 border-white dark:border-gray-900 shadow-[0_0_60px_rgba(168,85,247,0.7)] hover:shadow-[0_0_80px_rgba(168,85,247,0.9)] transition-all duration-300">
                     <img
-                      src="public/images/WhatsApp Image 2025-07-31 at 21.50.00_33fd9573.jpg"
+                      src="/images/WhatsApp-Image-2025-07-31.jpg"
                       alt="Saad Kamran"
                       className="w-full h-full object-cover"
                     />
@@ -402,4 +402,5 @@ export const HeroSection = () => {
       `}</style>
     </>
   );
+
 };
