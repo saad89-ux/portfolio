@@ -6,12 +6,12 @@ import { getStorage } from "firebase/storage"; // If you want Storage
 
 // Your Firebase config (from Firebase Console)
 const firebaseConfig = {
-  apiKey: "AIzaSyBQJtwv-HRlGvpBkWYVLWwaqixKsD6-gJo",
-  authDomain: "portfoliowebsite-d4975.firebaseapp.com",
-  projectId: "portfoliowebsite-d4975",
-  storageBucket: "portfoliowebsite-d4975.firebasestorage.app",
-  messagingSenderId: "74399786364",
-  appId: "1:74399786364:web:f95038efceb869de1eb0f9"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -23,3 +23,4 @@ const app = initializeApp(firebaseConfig);
 
 
  export  {db, auth, collection, addDoc, getDocs, query, orderBy, where, doc, updateDoc,onAuthStateChanged, signInWithPopup, GoogleAuthProvider} ;
+
